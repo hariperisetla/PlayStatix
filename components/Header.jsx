@@ -10,8 +10,8 @@ const Header = () => {
       <Link className="text-3xl cursor-pointer font-audiowide" href={"/"}>
         PlayStatix
       </Link>
-      <Search />
-      <ul className="flex space-x-5 text-xl font-audiowide">
+      <Search className="self-center" />
+      <ul className="flex space-x-5 text-md font-audiowide">
         {pages.map((page, id) => (
           <li key={id} className="hover:underline capitalize cursor-pointer">
             {page}

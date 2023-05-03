@@ -20,7 +20,7 @@ export const getServerSideProps = async ({ query }) => {
 
 const GameSearch = ({ games }) => {
   return (
-    <div className="grid grid-cols-8 gap-3">
+    <div className="grid grid-cols-7 gap-5">
       {games.map((game) => (
         <GameCard key={game.id} game={game} />
       ))}

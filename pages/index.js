@@ -26,7 +26,7 @@ export async function getServerSideProps() {
 
 export default function Home({ games }) {
   return (
-    <div className="grid grid-cols-7 gap-3">
+    <div className="grid grid-cols-7 gap-5">
       {games.map((game) => (
         <GameCard key={game.id} game={game} />
       ))}
